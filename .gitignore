@@ -1,0 +1,39 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Dataset audio files (too large for Git)
+dataset/
+music_wav/
+speech_wav/
+
+# Model artifacts (too large for Git)
+outputs/models/hf_ast_best/
+outputs/models/hf_ast/
+outputs/models/*.keras
+outputs/models/*.pkl
+
+# HuggingFace cache
+.cache/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Extracted features CSV (regeneratable)
+outputs/features_extracted.csv

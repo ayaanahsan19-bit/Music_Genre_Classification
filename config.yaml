@@ -1,0 +1,40 @@
+data:
+  dataset_path: ./dataset/genres_original
+  spectrogram_path: ./dataset/images_original
+  csv_path: ./dataset/features_30_sec.csv
+  music_wav_path: ./music_wav
+  speech_wav_path: ./speech_wav
+  classes:
+    - music
+    - speech
+
+audio:
+  sample_rate: 22050
+  duration: 30             # seconds per clip (will auto-adapt to shorter files)
+  n_mfcc: 40
+  n_mels: 128
+  hop_length: 512
+  n_fft: 2048
+
+spectrogram:
+  img_height: 224
+  img_width: 224
+
+training:
+  test_size: 0.2
+  val_size: 0.1
+  random_state: 42
+  batch_size: 8
+  epochs: 30
+  learning_rate: 0.001
+
+huggingface:
+  model_name: "MIT/ast-finetuned-audioset-10-10-0.4593"
+  num_labels: 2
+  freeze_base: true
+  fine_tune_epochs: 3
+
+outputs:
+  models_dir: ./outputs/models
+  plots_dir: ./outputs/plots
+  results_dir: ./outputs/results

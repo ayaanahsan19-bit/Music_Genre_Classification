@@ -1,0 +1,6 @@
+{
+  "model": "HuggingFace_AST",
+  "accuracy": 0.9615,
+  "f1_macro": 0.9615,
+  "train_time_s": 1277.44
+}

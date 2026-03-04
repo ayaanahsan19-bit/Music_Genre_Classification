@@ -1,0 +1,6 @@
+model,accuracy,f1_macro,train_time_s,epochs_run
+RandomForest,1.0,1.0,0.93,
+XGBoost,1.0,1.0,0.18,
+MLP,0.9615,0.9615,0.58,
+HuggingFace_AST,0.9615,0.9615,1277.44,
+CustomCNN,0.4737,0.4493,172.07,18.0

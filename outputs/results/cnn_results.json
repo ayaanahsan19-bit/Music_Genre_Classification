@@ -1,0 +1,7 @@
+{
+  "model": "CustomCNN",
+  "accuracy": 0.4737,
+  "f1_macro": 0.4493,
+  "train_time_s": 172.07,
+  "epochs_run": 18
+}
