@@ -90,7 +90,7 @@ MUSIC_GENRE_CLASSIFICATION/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/Music_Genre_Classification.git
+git clone https://github.com/ayaanahsan19-bit/Music_Genre_Classification.git
 cd Music_Genre_Classification
 ```
 
