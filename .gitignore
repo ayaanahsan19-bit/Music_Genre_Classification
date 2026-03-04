@@ -15,11 +15,9 @@ dataset/
 music_wav/
 speech_wav/
 
-# Model artifacts (too large for Git)
-outputs/models/hf_ast_best/
+# Model artifacts (large HF checkpoints excluded)
 outputs/models/hf_ast/
-outputs/models/*.keras
-outputs/models/*.pkl
+outputs/models/hf_ast_best/
 
 # HuggingFace cache
 .cache/
