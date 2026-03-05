@@ -1,7 +1,11 @@
 # 🎵 Music vs Speech Classification
 
+[![HuggingFace Space](https://img.shields.io/badge/🤗%20Demo-Music%20vs%20Speech%20Classifier-blue)](https://huggingface.co/spaces/Ayaan12112112/Music-Speech-Classifier)
+
 End-to-end audio classification system using the **GTZAN Music/Speech dataset** (64 music + 64 speech clips).  
 Compares three approaches: **Tabular ML**, **Custom CNN on spectrograms**, and **HuggingFace Audio Spectrogram Transformer (AST)**.
+
+**🚀 [Try the Live Demo](https://huggingface.co/spaces/Ayaan12112112/Music-Speech-Classifier)**
 
 ---
 
@@ -16,6 +20,8 @@ Compares three approaches: **Tabular ML**, **Custom CNN on spectrograms**, and *
 | Custom CNN | 47.37% | 0.45 | 172 s |
 
 > **Key takeaway:** Hand-crafted audio features (MFCCs, chroma, spectral) fed into tree-based models achieve perfect classification on this binary task. The pretrained AST transformer reaches 96% with only 3 epochs of head fine-tuning. The CNN trained from scratch overfits due to the small dataset size (128 images).
+
+> **⚠️ Known limitation:** The tabular models achieve 100% on the test split but may not generalize well to all audio types due to the small training set (128 samples). In real-world testing, the tabular pipeline has been observed to misclassify music as speech with moderate confidence. Retraining with a larger, more diverse dataset and improved feature engineering is planned.
 
 ---
 
